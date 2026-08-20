@@ -1,0 +1,507 @@
+.pc-show { display:block; } 
+.m-show { display:none; } 
+br.mo { display: none; } 
+br.mo_except { display: inline-block; } 
+
+
+
+.txt-black { color:#000; } 
+.txt-red { color:#ea1917; } 
+.txt-red2 { color:#f04a4a; } 
+.txt-bold { font-weight:700; } 
+.txt_line { position: relative; display: inline-block; color: #f04a4a; } 
+.txt_line:before { content:""; display: inline-block; position: absolute; bottom: 0; width: 100%; width: 100%; height: 10px; background-color: #fcdbdb; z-index: -1; } 
+.main-title { max-width:1260px; margin:60px auto; text-align:center; } 
+.main-title .page-tit { font-size:48px; line-height: 58px; } 
+.main-title .page-tit .small { font-size:24px; } 
+.main-title .sub-tit { font-size: 18px; color:#000000; font-weight:400; line-height:28px; } 
+
+.cover { position:relative; width:100%; overflow:hidden; } 
+.cover img { width:100%; height:auto; } 
+
+.tab-wrap { position:relative; margin:0 auto; overflow:hidden; box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3); } 
+.tab-wrap-inner { display:flex; justify-content:center; background:#fff; max-width: 1380px; width: 100%; margin: 0 auto; } 
+.tab-wrap-inner button { display:block; margin:0; width:25%; height:64px; font-size:18px; color:#000; font-weight:700; text-align:center; } 
+.tab-wrap-inner button.on { border-bottom: 2px solid #ea1917; color:#ea1917; } 
+.tab-wrap-inner button.active { border-bottom: 2px solid #ea1917; color:#ea1917; } 
+.tab_btn_box { position:sticky; top:0; left:0; z-index:99; background-color: #fff; } 
+
+.section_title_wrap { text-align: center; } 
+.section_title_wrap .sec_point { font-weight: 700; font-size: 28px; line-height: 34px; color: #ea1917; } 
+.section_title_wrap .sec_title { margin: 19px 0 0; font-weight: 700; font-size: 40px; line-height: 50px; } 
+.section_title_wrap .sec_txt { margin: 28px 0 0; font-size: 28px; font-weight: 700; line-height: 38px; } 
+.section_title_wrap .sec_sm_txt { margin: 9px 0 0; font-size: 18px; line-height: 28px; } 
+
+.section_check_wrap { text-align: center; } 
+.section_check_wrap .check_img { } 
+.section_check_wrap .check_tit { margin: 13px 0 0; font-size: 24px; font-weight: 700; line-height: 34px; color: #999999; } 
+.section_check_wrap .check_txt { margin: 9px 0 0; font-size: 24px; font-weight: 700; line-height: 34px; } 
+.section_check_wrap .check_sm_txt { margin: 31px 0 0; font-size: 18px; line-height: 28px; } 
+
+/*section padding*/
+.section-wrap { padding: 0 0 120px; } 
+.sec-capacity-box { padding: 117px 0 0; } 
+.sec-function-box { padding: 114px 0 0; } 
+.sec-design-box { padding: 113px 0 0; text-align: center; } 
+.sec-tip-box { padding: 113px 0 0; text-align: center; } 
+/**/
+
+/*capacity*/
+.capacity_list { max-width: 1380px; display: flex; justify-content: space-between; gap: 39px; margin: 75px auto 73px; } 
+.capacity_list > li { width: calc(100%/3 - 26px);; border-radius: 30px; background-color: #f6f3eb; text-align: center; } 
+.capacity_list > li:nth-child(2) { background-color: #fff; } 
+.capacity_list > li .list_img img { width: 100%; object-fit: cover; } 
+.capacity_list > li .list_txt { margin: 14px 0 0; font-size: 18px; line-height: 28px; } 
+.capacity_list > li .list_arr { margin: 35px 0 0; } 
+.capacity_list > li .list_tit { margin: 34px 0 0; font-size: 24px; font-weight: 700; line-height: 34px; } 
+.capacity_list > li .list_bt_wrap { margin: 14px 0 0; } 
+.capacity_list > li .list_bt_wrap .bt_img img.pc-show { display: inline-block; width: 70%; object-fit: cover; } 
+.capacity_list > li .list_bt_wrap .bt_img img.m-show { display:none; } 
+.capacity_list > li .list_bt_wrap .bt_img .bt_txt_box { margin: 13px 0 0; } 
+.capacity_list > li .list_bt_wrap .bt_txt_box .bt_txt { font-size: 18px; line-height: 28px; } 
+.capacity_list > li .list_bt_wrap .bt_txt_box .bt_btn { margin: 15px 0 40px; } 
+.capacity_list > li .list_bt_wrap .bt_txt_box .bt_btn > a { position: relative; display: inline-block; padding: 0 43px 0 28px; background-color: #000; font-size: 14px; font-weight: 500; line-height: 40px; color: #fff; border-radius: 30px; } 
+.capacity_list > li .list_bt_wrap .bt_txt_box .bt_btn > a::before { content: ""; position: absolute; top: 50%; right: 27px; transform: translateY(-50%); display: inline-block; width: 9px; height: 16px; background:url(../../img/lg-dehumidifiers-guide/arrow_white.png) no-repeat; background-size: 70% 70%; background-position: center; margin-left: 9px; margin-top: 1px; } 
+
+/*QA*/
+.qa_box { max-width: 906px; margin: 0 auto; } 
+.qa_box .qa_title { margin: 0 0 35px; font-size: 24px; font-weight: 700; line-height: 34px; text-align: center; } 
+.qa_box .qa_title.sty1 { margin: 93px 0 18px; font-size: 40px; line-height: 60px; } 
+.qa_box .qa_list { } 
+.qa_box .qa_list > li { margin: 10px 0 0; border: 1px solid #e4e4e4; border-radius: 30px; overflow: hidden; } 
+.qa_box .qa_list > li:first-child { margin: 0; } 
+.qa_box .qa_list > li .question { position: relative; display: flex; width: 100%; justify-content: flex-start; padding: 0 56px 0 40px; font-size: 18px; font-weight: 700; line-height: 28px; align-items: center; line-height: 63px; transition: all 0.3s; } 
+.qa_box .qa_list > li .question:after { content: ''; display: block; position: absolute; top: 50%; right: 41px; width: 15px; height: 8px; background-image: url("../../img/lg-dehumidifiers-guide/qa_arr.png"); background-size: 100% 100%; background-position: center; transform: translateY(-50%); transition: all 0.5s; } 
+.qa_box .qa_list > li.on .question:after { transform: translateY(-50%); } 
+.qa_box .qa_list > li .question span { margin: 0 5px 0 0; } 
+.qa_box .qa_list > li .answer { display: none; padding: 34px 63px; font-size: 18px; line-height: 28px; border-top: 1px solid #e4e4e4; background-color: #f4f4f4; text-align: left; word-break: keep-all; } 
+.qa_box .qa_list > li .answer .answer_margin { margin: 11px 0 0; } 
+.qa_box .qa_list > li .answer .answer_btn { margin: 15px 0 0; } 
+.qa_box .qa_list > li .answer .answer_btn > a { position: relative; display: inline-block; padding: 0 22px; font-size: 14px; font-weight: 500; line-height: 40px; border: 1px solid #000; border-radius: 30px; } 
+.qa_box .qa_list > li .answer .answer_btn > a::after { content: ""; display: inline-block; width: 7px; height: 12px; background:url(../../img/lg-dehumidifiers-guide/arrow_black.png) no-repeat; background-size: 90% 90%; background-position: center bottom; margin-left: 9px; margin-top: 1px; } 
+
+/*fucntion*/
+.function_list { margin: 75px 0 0; } 
+.function_list > li { margin: 75px 0 0; } 
+.function_list > li:first-child { margin: 0; } 
+.function_list > li .function_img_wrap { max-width: 908px; display: flex; width: 100%; margin: 74px auto 0; justify-content: space-between; } 
+.function_list > li .function_img_wrap .func_img { text-align: center; } 
+.function_list > li .function_img_wrap .func_img img { width: 100%; object-fit: cover; } 
+.function_list > li .function_img_wrap .func_img .img_cap { } 
+.function_list > li .function_img_wrap .func_img .img_cap .img_tit { margin: 13px 0 0; font-size: 24px; font-weight: 700; line-height: 34px; } 
+.function_list > li .function_img_wrap .func_img .img_cap .img_txt { margin: 10px 0 0; font-size: 18px; line-height: 28px; } 
+
+/*design*/
+.design_img_box { max-width: 1024px; margin: 75px auto 0; display: flex; justify-content: center; } 
+.design_img_box img { max-width: 100%; object-fit: cover; } 
+.design_comparison { margin: 0 auto; text-align: center; } 
+.design_comparison .comparison_tit { margin: 32px 0 77px; font-size: 24px; font-weight: 700; line-height: 34px; } 
+.design_comparison .comparison_img { max-width: 1380px; margin: 0 auto; } 
+.design_comparison .comparison_ul { display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; margin: 0 auto; } 
+.design_comparison .comparison_ul > li { position: relative; width: calc(100%/3 - 26.6666px); background-color: #faf9f7; background-size: cover; border-radius: 28px; } 
+.design_comparison .comparison_ul > li.li_video { background:none; } 
+.design_comparison .comparison_ul.col-2 { justify-content: space-between; margin-top: 40px; } 
+.design_comparison .comparison_ul.col-2 > li:nth-child(2n) { width: calc(100% - (100%/3 - 26.6666px + 40px)); } 
+.design_comparison .comparison_ul > li::before { content: ""; display: inline-block; position: absolute; right: -18px; top: 50%; transform: translateY(-50%) rotate(45deg); width: 36px; height: 36px; background-color: #faf9f7; border-radius: 8px; } 
+.design_comparison .comparison_ul > li:nth-child(3n):before { left: -14px; } 
+.design_comparison .comparison_ul > li:nth-child(3n-1):before { content: ""; top:initial; left:initial; right: initial; background:none; transform: initial; } 
+.design_comparison .comparison_ul > li::before { content: ""; display: inline-block; position: absolute; right: -14px; top: 50%; transform: translateY(-50%) rotate(45deg); width: 36px; height: 36px; background-color: #faf9f7; border-radius: 8px; } 
+.design_comparison .comparison_ul.col-2 > li:nth-child(odd)::before { content: ""; top:initial; left:initial; right: initial; background:none; transform: initial; } 
+.design_comparison .comparison_ul.col-2 > li:nth-child(2n)::before { content: ""; display: inline-block; position: absolute; left: -14px; top: 50%; transform: translateY(-50%) rotate(45deg); width: 36px; height: 36px; background-color: #faf9f7; border-radius: 8px; } 
+.design_comparison .comparison_ul > li:nth-child(1):before { background-color: #f6f3eb; } 
+.design_comparison .comparison_ul > li:nth-child(3):before { background-color: #e6e1d6; } 
+.design_comparison .comparison_ul > li:nth-child(4):before { background-color: #f6f3eb; } 
+.design_comparison .comparison_ul > li:nth-child(6):before { background-color: #363225; content: ""; top:initial; left:initial; right: initial; background:none; transform: initial; } 
+.design_comparison .comparison_ul > li:nth-child(7):before { background-color: #f6f7f7; } 
+.design_comparison .comparison_ul > li:nth-child(9):before { background-color: #d9d9d9; content: ""; top:initial; left:initial; right: initial; background:none; transform: initial; } 
+.design_comparison .comparison_ul > li:nth-child(10):before { background-color: #f6f3eb; } 
+.design_comparison .comparison_ul > li:nth-child(12):before { background-color: #e6e1d6; } 
+.design_comparison .comparison_ul.col-2 > li:nth-child(2):before { background-color: #dddbd4; } 
+.design_comparison .comparison_ul.col-2 > li:nth-child(4):before { background-color: #f6f3eb; } 
+.design_comparison .comparison_ul > li .text_box { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100%; } 
+.design_comparison .comparison_ul > li .text_box * { word-break: keep-all; } 
+.design_comparison .comparison_ul > li .text_box .comparison_title { font-size: 28px; line-height: 38px; font-weight: 700; } 
+.design_comparison .comparison_ul > li .text_box .comparison_txt { font-size: 20px; line-height: 30px; margin-top: 7px; } 
+.design_comparison .comparison_ul > li .text_box .sm_txt { font-size: 14px; line-height: 24px; color: #999999; } 
+.design_comparison .comparison_ul > li .img_box { position: relative; border-radius: 28px; } 
+.design_comparison .comparison_ul > li .img_box img { width: 100%; object-fit: cover; } 
+.design_comparison .comparison_ul > li video { width: 100%; height: 100%; margin-left: -15px; } 
+
+.design_table_wrap { margin: 80px 0 0; padding: 113px 0 120px; background-color: #faf9f7; } 
+.design_table_wrap .table_title { font-size: 24px; font-weight: 700; line-height: 34px; } 
+.design_table_wrap .design_table { margin:0 auto; max-width:1002px; } 
+.design_table_wrap .design_table_align { margin: 75px 0 0; max-width: 1052px; border-collapse: collapse; } 
+.design_table_wrap .design_table_align thead { } 
+.design_table_wrap .design_table_align thead tr { border-bottom: 1px solid #f0ece4; } 
+.design_table_wrap .design_table_align thead tr th { font-size: 18px; font-weight: 700; line-height: 68px; background-color: #faf9f7; border-left: 1px solid #f0ece4; } 
+.design_table_wrap .design_table_align thead tr th:first-child { border-left: none; } 
+.design_table_wrap .design_table_align thead tr th.th_img { border-left: none; vertical-align: bottom; } 
+.design_table_wrap .design_table_align thead tr th.th_img img { width: 75%; object-fit: cover; } 
+.design_table_wrap .design_table_align tbody { } 
+.design_table_wrap .design_table_align tbody tr { border-bottom: 1px solid #f0ece4; } 
+.design_table_wrap .design_table_align tbody tr td:first-child { border-left: none; } 
+.design_table_wrap .design_table_align tbody tr td { border-left: 1px solid #f0ece4; font-size: 18px; line-height: 28px; padding: 19px 0; word-break: keep-all; } 
+.design_table_wrap .design_table_align tbody tr td:nth-child(2), .design_table_wrap .design_table_align tbody tr td:nth-child(3) { background-color: #ffffff; } 
+
+/*tip*/
+.tip_list_box { margin: 59px 0 0; text-align: center; } 
+.tip_list_box .tit_title { position: relative; display: inline-block; padding: 27px 57px 0; } 
+.tip_list_box .tit_title:before { content: ''; display: inline-block; position: absolute; top: 0; left: 0; width: 95px; height: 46px; background-repeat: no-repeat; background-size: 100% 100%; } 
+.tip_list_box .tit_title.tip1:before { background-image: url("../../img/lg-dehumidifiers-guide/tip-icon1.png"); } 
+.tip_list_box .tit_title.tip2:before { background-image: url("../../img/lg-dehumidifiers-guide/tip-icon2.png"); } 
+.tip_list_box .tit_title.tip2 { margin-top: 53px; } 
+.tip_list_box .tit_title > span { display: inline-block; font-size: 24px; font-weight: 700; line-height: 48px; padding: 0 39px; background-color: #f0ece4; border-radius: 30px; } 
+.tip_list_box .f_gray { margin-top: 35px; font-size: 14px; line-height: 24px; color: #999999; } 
+
+.tip_list_box .tip_img_list { margin: 60px auto 0; } 
+.tip_list_box .tip_img_list > li { } 
+.tip_list_box .tip_img_list > li .tip_tit { margin: 14px 0 0; font-size: 24px; font-weight: 700; line-height: 34px; } 
+.tip_list_box .tip_img_list > li .tip_txt { margin: 8px 0 0; font-size: 18px; line-height: 28px; } 
+.tip_list_box .tip_img_list > li .tip_txt.sty2 { white-space: nowrap; margin-left: -11px; } 
+.tip_list_box .tip_img_list > li .tip_img { text-align: center; } 
+.tip_list_box .tip_img_list > li .tip_img img { width: 100%; object-fit: cover; } 
+.tip_list_box .tip_img_list > li .tip_btn { margin: 15px 0 0; } 
+.tip_list_box .tip_img_list > li .tip_btn > a { position: relative; display: inline-block; padding: 0 36px 0 22px; font-size: 14px; font-weight: 500; line-height: 40px; color: #fff; background-color: #000; border-radius: 30px; } 
+.tip_list_box .tip_img_list > li .tip_btn > a::before { content: ""; position: absolute; top: 50%; right: 21px; transform: translateY(-50%); display: inline-block; width: 9px; height: 16px; background:url(../../img/lg-dehumidifiers-guide/arrow_white.png) no-repeat; background-size: 70% 70%; background-position: center; margin-left: 9px; margin-top: 1px; } 
+
+.tip_list_box .tip_img_list.col-2 { max-width: 908px; width: 100%; display: flex; justify-content: space-between; gap: 40px; flex-wrap: wrap; } 
+.tip_list_box .tip_img_list.col-2 > li { width: calc(50% - 20px); } 
+.tip_list_box .tip_img_list.col-3 { max-width: 1025px; width: 100%; display: flex; justify-content: space-between; gap: 40px; flex-wrap: wrap; } 
+.tip_list_box .tip_img_list.col-3 > li { width: calc(33.3333% - 26.6666px); } 
+
+
+/*전체링크*/
+.link_btn { margin: 120px 0 0; text-align: center; } 
+.link_btn > a { position: relative; display: inline-block; font-size: 18px; font-weight: 500; line-height: 64px; padding: 0 55px; border-radius: 30px; background-color: #000; color: #fff; } 
+.link_btn > a::after { content: ""; display: inline-block; width: 9px; height: 16px; background:url(../../img/lg-dehumidifiers-guide/arrow_white.png) no-repeat; background-size: 90% 90%; background-position: center bottom; margin-left: 9px; } 
+
+
+
+
+
+@media (max-width:1400px) {
+.txt_line:before { height: 8px; } 
+.main-title { max-width:100%; margin:50px auto; } 
+.main-title .page-tit { font-size:38px; line-height: 48px; } 
+.main-title .page-tit .small { font-size:18px; } 
+.main-title .sub-tit { font-size: 16px; line-height:24px; } 
+
+.tab-wrap-inner { max-width: 100%; } 
+.tab-wrap-inner button { height:54px; font-size:16px; } 
+
+.section_title_wrap .sec_point { font-size: 24px; line-height: 30px; } 
+.section_title_wrap .sec_title { margin: 19px 0 0; font-size: 32px; line-height: 42px; } 
+.section_title_wrap .sec_txt { margin: 20px 0 0; font-size: 24px; line-height: 30px; } 
+.section_title_wrap .sec_sm_txt { font-size: 16px; line-height: 24px; } 
+
+.section_check_wrap .check_tit { font-size: 20px; line-height: 28px; } 
+.section_check_wrap .check_txt { margin: 5px 0 0; font-size: 20px; line-height: 34px; } 
+.section_check_wrap .check_sm_txt { margin: 22px 0 0; font-size: 16px; line-height: 24px; } 
+
+/*section padding*/
+.section-wrap { padding: 0 0 100px; } 
+.sec-capacity-box { padding: 90px 0 0; } 
+.sec-function-box { padding: 90px 0 0; } 
+.sec-design-box { padding: 90px 0 0; } 
+.sec-tip-box { padding: 90px 0 0; } 
+/**/
+
+/*capacity*/
+.capacity_list { max-width: 100%; gap: 16px; margin: 65px auto 63px; padding: 0 20px; } 
+.capacity_list > li { width: calc(100%/3 - 10.6666px); } 
+.capacity_list > li .list_txt { margin: 10px 0 0; font-size: 16px; line-height: 24px; } 
+.capacity_list > li .list_arr { margin: 25px 0 0; } 
+.capacity_list > li .list_tit { margin: 24px 0 0; font-size: 20px; line-height: 30px; } 
+.capacity_list > li .list_bt_wrap { margin: 14px 0 0; } 
+.capacity_list > li .list_bt_wrap .bt_img { } 
+.capacity_list > li .list_bt_wrap .bt_img .bt_txt_box { margin: 10px 0 0; } 
+.capacity_list > li .list_bt_wrap .bt_txt_box .bt_txt { font-size: 16px; line-height: 24px; } 
+.capacity_list > li .list_bt_wrap .bt_txt_box .bt_btn { margin: 15px 0 30px; } 
+
+
+/*fucntion*/
+.function_list { margin: 65px 0 0; } 
+.function_list > li { margin: 65px 0 0; } 
+.function_list > li .function_img_wrap { max-width: 100%; margin: 73px auto 0; padding: 0 100px; justify-content: center; gap: 20px; } 
+.function_list > li .function_img_wrap .func_img .img_cap .img_tit { margin: 10px 0 0; font-size: 20px; line-height: 24px; } 
+.function_list > li .function_img_wrap .func_img .img_cap .img_txt { margin: 5px 0 0; font-size: 16px; line-height: 24px; } 
+
+/*design*/
+.design_img_box { max-width: 100%; margin: 65px auto 0; } 
+.design_comparison .comparison_img { max-width: 100%; padding: 0 20px; } 
+.design_comparison .comparison_tit { margin: 22px 0 67px; font-size: 20px; line-height: 30px; } 
+.design_comparison .comparison_ul { max-width: 100%; } 
+.design_comparison .comparison_ul > li .text_box .comparison_title { font-size: 20px; line-height: 30px; } 
+.design_comparison .comparison_ul > li .text_box .comparison_txt { font-size: 16px; line-height: 24px; margin-top: 5px; } 
+
+
+.design_table_wrap { margin: 60px 0 0; padding: 100px 0 110px; } 
+.design_table_wrap .table_title { font-size: 20px; line-height: 24px; } 
+.design_table_wrap .design_table_align { margin: 65px 0 0; } 
+.design_table_wrap .design_table_align thead tr th { font-size: 16px; line-height: 58px; } 
+.design_table_wrap .design_table_align tbody tr td { font-size: 16px; line-height: 24px; padding: 14px 0; } 
+
+/*tip*/
+.tip_list_box { margin: 49px 0 0; } 
+.tip_list_box .tit_title { padding: 27px 57px 0; } 
+.tip_list_box .tit_title:before { top: 5px; left: 10px; background-size: 90% 90%; } 
+.tip_list_box .tit_title.tip2 { margin-top: 25px; } 
+.tip_list_box .tit_title > span { font-size: 20px; line-height: 40px; padding: 0 30px; } 
+.tip_list_box .tip_img_list { margin: 40px auto 0; } 
+.tip_list_box .tip_img_list > li .tip_tit { font-size: 16px; line-height: 20px; } 
+.tip_list_box .tip_img_list > li .tip_txt { font-size: 14px; line-height: 20px; } 
+.tip_list_box .tip_img_list > li .tip_btn { margin: 10px 0 0; } 
+.tip_list_box .tip_img_list > li .tip_btn > a { font-size: 14px; line-height: 32px; } 
+
+
+
+/*전체링크*/
+.link_btn { margin: 100px 0 0; } 
+.link_btn a { font-size: 16px; line-height: 54px; padding: 0 45px; } 
+ }
+
+@media (max-width:1280px) {
+.main-title { margin:50px auto; } 
+.main-title .page-tit { font-size:30px; line-height: 40px; } 
+.main-title .page-tit .small { font-size:16px; } 
+.main-title .sub-tit { font-size: 16px; line-height:24px; } 
+
+.tab-wrap-inner button { height:54px; font-size:16px; } 
+
+.section_title_wrap .sec_point { font-size: 20px; line-height: 26px; } 
+.section_title_wrap .sec_title { margin: 14px 0 0; font-size: 28px; line-height: 38px; } 
+.section_title_wrap .sec_txt { margin: 14px 0 0; font-size: 20px; line-height: 26px; } 
+.section_title_wrap .sec_sm_txt { font-size: 16px; line-height: 24px; } 
+
+.section_check_wrap .check_tit { font-size: 20px; line-height: 28px; } 
+.section_check_wrap .check_txt { font-size: 16px; line-height: 30px; } 
+.section_check_wrap .check_sm_txt { margin: 18px 0 0; font-size: 14px; line-height: 20px; } 
+
+/*section padding*/
+.section-wrap { padding: 0 0 80px; } 
+.sec-capacity-box { padding: 70px 0 0; } 
+.sec-function-box { padding: 70px 0 0; } 
+.sec-design-box { padding: 70px 0 0; } 
+.sec-tip-box { padding: 70px 0 0; } 
+}
+
+
+@media (max-width:1080px) {
+/*capacity*/
+.capacity_list { margin: 55px auto 53px; padding: 0 10px; } 
+.capacity_list > li .list_txt { margin: 10px 0 0; font-size: 14px; line-height: 20px; } 
+.capacity_list > li .list_arr { margin: 18px 0 0; } 
+.capacity_list > li .list_tit { margin: 20px 0 0; font-size: 16px; line-height: 24px; } 
+.capacity_list > li .list_bt_wrap { margin: 10px 0 0; } 
+.capacity_list > li .list_bt_wrap .bt_img .bt_txt_box { margin: 5px 0 0; } 
+.capacity_list > li .list_bt_wrap .bt_txt_box .bt_txt { font-size: 14px; line-height: 20px; } 
+.capacity_list > li .list_bt_wrap .bt_txt_box .bt_btn { margin: 10px 0 25px; } 
+.capacity_list > li .list_bt_wrap .bt_txt_box .bt_btn > a { line-height: 32px; } 
+
+/*QA*/
+.qa_box { padding: 0 80px; } 
+.qa_box .qa_title { margin: 0 0 25px; font-size: 16px; line-height: 24px; } 
+.qa_box .qa_title.sty1 { margin: 73px 0 8px; font-size: 26px; line-height: 40px; } 
+.qa_box .qa_list > li .question { padding: 0 36px 0 20px; font-size: 16px; line-height: 24px; line-height: 48px; } 
+.qa_box .qa_list > li .answer { display: none; padding: 24px 53px; font-size: 14px; line-height: 20px; } 
+.qa_box .qa_list > li .answer .answer_btn { margin: 8px 0 0; } 
+
+
+/*design*/
+.design_img_box img { width:80%; } 
+.design_comparison .comparison_img { padding: 0 20px; } 
+.design_comparison .comparison_tit { margin: 22px 0 67px; font-size: 18px; line-height: 28px; } 
+.design_comparison .comparison_ul > li .text_box .comparison_title { font-size: 18px; line-height: 28px; } 
+.design_comparison .comparison_ul > li .text_box .comparison_txt { font-size: 14px; line-height: 20px } 
+
+
+
+.tip_list_box .tip_img_list.col-2 { gap: 20px; padding: 0 10px; } 
+.tip_list_box .tip_img_list.col-2 > li { width: calc(50% - 10px); } 
+.tip_list_box .tip_img_list.col-3 { gap: 10px; padding: 0 10px; } 
+.tip_list_box .tip_img_list.col-3 > li { width: calc(33.3333% - 6.6666px); } 
+ }
+
+
+
+
+
+
+
+@media (max-width:720px) {.pc-show { display:none; } 
+.m-show { display:block; } 
+span.mo { display:none; } 
+br.mo { display: inline-block; } 
+br.mo_except { display: none; } 
+
+.txt_line:before { height: 10px; } 
+.main-title { margin:60px auto; text-align:center; } 
+.main-title .page-tit { font-size:10.0000vw; line-height: 15.0000vw; } 
+.main-title .page-tit .small { font-size:5.0000vw; line-height: 7.5000vw; } 
+.main-title .sub-tit { font-size: 3.7500vw; line-height:5.5556vw; } 
+
+.tab-wrap-inner button { width:25%; height:13.3333vw; font-size:3.7500vw; } 
+
+.section_title_wrap .sec_point { font-size: 5.8333vw; line-height: 7.0833vw; color: #ea1917; } 
+.section_title_wrap .sec_title { margin: 3.6111vw 0 0; font-size: 8.3333vw; line-height: 10.4167vw; } 
+.section_title_wrap .sec_txt { margin: 6.2500vw 0 0; font-size: 5.8333vw; line-height: 7.9167vw; } 
+.section_title_wrap .sec_sm_txt { margin: 5.6944vw 0 0; font-size: 3.7500vw; line-height: 5.8333vw; } 
+
+.section_check_wrap .check_tit { margin: 2.7778vw 0 0; font-size: 5.0000vw; line-height: 7.0833vw; } 
+.section_check_wrap .check_txt { margin: 1.3889vw 0 0; font-size: 5.0000vw; line-height: 7.0833vw; } 
+.section_check_wrap .check_sm_txt { margin: 5.5556vw 0 0; font-size:3.7500vw; line-height: 5.8333vw; } 
+
+/*section padding*/
+.section-wrap { padding: 0 0 120px; } 
+.sec-capacity-box { padding: 117px 0 0; } 
+.sec-function-box { padding: 114px 0 0; } 
+.sec-design-box { padding: 113px 0 0; text-align: center; } 
+.sec-tip-box { padding: 113px 0 0; text-align: center; } 
+/**/
+
+
+/*capacity*/
+.capacity_list { position: relative; max-width:100%; width: 100%; gap: 4.1667vw; margin: 15.0000vw 0 22.9166vw; padding: 0 4%;} 
+
+
+.capacity_list .dots_custom { position: absolute; bottom: -7.2222vw; left: 50%;  display: flex !important; vertical-align: middle; margin: auto 0; padding: 0; transform: translateX(-50%);} 
+.capacity_list .dots_custom li { list-style: none; cursor: pointer; display: inline-block; margin: 0 1.1111vw; padding: 0; } 
+.capacity_list .dots_custom li button { border: none; background: #cccccc; color: transparent; cursor: pointer; display: block; height: 1.6667vw; width: 1.6667vw; border-radius: 100%; padding: 0; } 
+.capacity_list .dots_custom li.slick-active button { width: 5.0000vw; background-color: #333333; border-radius: 0.8333vw; } 
+
+
+
+
+
+
+.capacity_list .slick-list {overflow: visible; width: 100%;} 
+.capacity_list .slick-list .slick-track {} 
+.capacity_list .slick-list .slick-track > li { text-align: center; background: #f6f3eb; border-radius: 42px;margin:0 0.5%; } 
+.capacity_list .slick-list .slick-track > li:last-child{margin-right: 0.5%}
+
+.capacity_list .slick-list .slick-track > li .list_img img.pc-show { display: none; } 
+.capacity_list .slick-list .slick-track > li .list_img img.m-show { display: inline-block; width: 100%; object-fit: cover; } 
+.capacity_list .slick-list .slick-track > li .list_txt { margin: 3.3333vw 0 0; font-size: 3.7500vw; line-height: 5.8333vw; } 
+.capacity_list .slick-list .slick-track > li .list_arr { display: flex; justify-content: center; margin:6.3889vw 0 0; } 
+.capacity_list .slick-list .slick-track > li .list_tit { margin: 7.5000vw 0 0; font-size: 5.0000vw; font-weight: 700; line-height: 7.0833vw; } 
+.capacity_list .slick-list .slick-track > li .list_bt_wrap { display: flex; justify-content: space-between; margin: 6.9444vw 0 0; padding: 03.6111vw; } 
+.capacity_list .slick-list .slick-track > li .list_bt_wrap .bt_img { max-width: 37.9167vw; } 
+.capacity_list .slick-list .slick-track > li .list_bt_wrap .bt_img img.pc-show { display: none; } 
+.capacity_list .slick-list .slick-track > li .list_bt_wrap .bt_img img.m-show { display: inline-block; width: 98%; } 
+.capacity_list .slick-list .slick-track > li .list_bt_wrap .bt_txt_box { display: flex; flex-direction: column; justify-content: center; align-items: center; max-width: 37.2222vw; } 
+.capacity_list .slick-list .slick-track > li .list_bt_wrap .bt_txt_box .bt_txt { font-size: 3.7500vw; line-height: 5.8333vw; text-align: center; } 
+.capacity_list .slick-list .slick-track > li .list_bt_wrap .bt_txt_box .bt_btn { margin: 4.4444vw; } 
+.capacity_list .slick-list .slick-track > li .list_bt_wrap .bt_txt_box .bt_btn > a { position: relative; display: inline-block; min-width: 37.2222vw; padding:0 4.9333vw; background-color: #000; font-size: 3.7500vw; font-weight: 500; text-align: left; line-height: 10.0000vw; color: #fff; border-radius: 36px; } 
+.capacity_list .slick-list .slick-track > li .list_bt_wrap .bt_txt_box .bt_btn > a::before { content: ""; display: inline-block; position: absolute; width: 9px; height: 16px; top:50%;; transform: translateY(-50%); right: 5.7778vw; background:url(../../img/lg-dehumidifiers-guide/arrow_white.png) no-repeat; background-size: 70% 70%; background-position: center; margin-left: 2.7778vw; } 
+
+/*QA*/
+.qa_box { padding: 0 5.5556vw; } 
+.qa_box .qa_title { margin: 0 0 35px; font-size: 5.0000vw; line-height: 7.0833vw; } 
+.qa_box .qa_title.sty1 { margin: 16.6667vw 0 8.3333vw; font-size: 8.3333vw; line-height: 1; } 
+.qa_box .qa_list > li { margin: 2.0833vw 0 0; } 
+.qa_box .qa_list > li .question { align-items: baseline; font-size: 3.7500vw; line-height: 5.8333vw; max-height: 19.0278vw; padding-top:3.7500vw; padding-bottom: 3.7500vw; text-align: left; transition: all 0.3s; } 
+.qa_box .qa_list > li .question:after { right: 3.5556vw; width: 15px; height: 8px; background-image: url("../../img/lg-dehumidifiers-guide/qa_arr.png"); background-size: 100% 100%; background-position: center; transform: translateY(-50%); transition: all 0.5s; } 
+.qa_box .qa_list > li .question span { margin: 0 0.6944vw 0 0; } 
+.qa_box .qa_list > li .answer { padding: 4.1667vw 5.0000vw; font-size: 3.7500vw; line-height: 5.8333vw; word-break: keep-all; } 
+.qa_box .qa_list > li .answer p br { display: none; } 
+.qa_box .qa_list > li .answer .answer_margin { margin: 1.3889vw 0 0; } 
+.qa_box .qa_list > li .answer .answer_btn { margin: 4.1667vw 0 0; } 
+.qa_box .qa_list > li .answer .answer_btn > a { display: inline-block; padding: 0 5.0000vw; font-size: 3.7500vw;; line-height: 10.0000vw; } 
+.qa_box .qa_list > li .answer .answer_btn > a::after { content: ""; display: inline-block; width: 7px; height: 12px; background:url(../../img/lg-dehumidifiers-guide/arrow_black.png) no-repeat; background-size: 100% auto; background-position: top center; } 
+
+/*fucntion*/
+.function_list { margin: 15.2778vw 0 0; } 
+.function_list > li { margin: 15.2778vw 0 0; } 
+.function_list > li .function_img_wrap { margin: 15.2778vw auto 0; padding: 0 5.5556vw; gap: 5.5556vw; } 
+.function_list > li .function_img_wrap .func_img { width: calc(100% - 2.7778vw); } 
+.function_list > li .function_img_wrap .func_img .img_cap .img_tit { margin: 2.7778vw 0 0; font-size: 5.0000vw; line-height: 7.0833vw; } 
+.function_list > li .function_img_wrap .func_img .img_cap .img_txt { margin: 1.8056vw 0 0; font-size:3.7500vw; line-height: 5.8333vw; } 
+
+/*design*/
+.design_img_box { margin: 11.1111vw auto 0; } 
+.design_img_box img { width: 100%; object-fit: cover; } 
+.design_comparison .comparison_img { padding: 0; overflow: visible; } 
+
+.comparison_list .slick-arrow { position: absolute; top:25.0000vw; width: 72px; height: 72px; background-size: 60% 60%; background-repeat: no-repeat; background-position: left center; z-index: 6; } 
+.comparison_list .slick-arrow.custom-prev { left: 8.3333vw; background-image: url(../../img/lg-dehumidifiers-guide/icon_left.png); } 
+.comparison_list .slick-arrow.custom-next { right:8.3333vw; background-image: url(../../img/lg-dehumidifiers-guide/icon_right.png); background-position: right center; } 
+
+.comparison_list {padding: 0 8.3333vw; } 
+ .comparison_list .slick-list{overflow: visible; width: 100%;}
+ .comparison_list .slick-list .slick-track > li { margin: 0 2.0833vw; } 
+ .comparison_list .slick-list .slick-track > li:first-child { margin: 0; } 
+ .comparison_list .slick-list .slick-track > li .comparison_txt_box {position: relative; min-height: 98.7500vw; margin: 0 auto; padding: 7.0833vw 4.1667vw 5.5556vw; background-color: #f6f3eb; border-radius: 4.1667vw; } 
+ .comparison_list .slick-list .slick-track > li .comparison_txt_box .comparison_title { font-size: 5.0000vw; font-weight: 700; line-height: 7.0833vw; } 
+ .comparison_list .slick-list .slick-track > li .comparison_txt_box .comparison_txt { margin: 1.5278vw 0 0; font-size: 3.7500vw; line-height: 5.8333vw; word-break: keep-all; } 
+ .comparison_list .slick-list .slick-track > li .comparison_txt_box .comparison_sm_txt { margin: 2.0833vw 0 0; font-size: 2.9167vw; line-height: 5.0000vw; word-break: keep-all; color: #999999; } 
+ .comparison_list .slick-list .slick-track > li .comparison_img_box {position: absolute; left: 50%; bottom: 5.5556vw; transform: translateX(-50%); width: 75.0000vw; display: flex; justify-content: space-between; gap: initial; margin: 0 auto;} 
+ .comparison_list .slick-list .slick-track > li .comparison_img_box .circle{width:12.6389vw; position: absolute; bottom: 15.9000vw; right: -2.1500vw; } 
+ .comparison_list .slick-list .slick-track > li .comparison_img_box .circle img {width: 100% !important;} 
+ .comparison_list .slick-list .slick-track > li .comparison_img_box img { width: 100%; } 
+ .comparison_list .slick-list .slick-track > li .comparison_img_box img { width: 100%; } 
+ /* .comparison_list .slick-list .slick-track > li .comparison_img_box img.red_circle { position: absolute; right: 4.1667vw; bottom: 20.6944vw; width: 12.5000vw; height: 12.5000vw; } */
+ .comparison_list .slick-list .slick-track > li .comparison_img_box.sty2 img { width: calc(100%/2 - 20px); } 
+ .comparison_list .slick-list .slick-track > li .comparison_img_box.sty2 video { width: calc(100%/2 - 20px); border-radius: 36px; } 
+ .comparison_list .dots_custom { display: inline-block; vertical-align: middle; margin: auto 0; padding: 0; margin-top: 5.5556vw; } 
+
+ .comparison_list .dots_custom li { list-style: none; cursor: pointer; display: inline-block; margin: 0 1.1111vw; padding: 0; } 
+ .comparison_list .dots_custom li button { border: none; background: #cccccc; color: transparent; cursor: pointer; display: block; height: 1.6667vw; width: 1.6667vw; border-radius: 100%; padding: 0; } 
+ .comparison_list .dots_custom li.slick-active button { width: 5.0000vw; background-color: #333333; border-radius: 0.8333vw; } 
+
+
+.design_comparison .comparison_tit { margin: 10.5556vw 0 7.0833vw; font-size: 5.0000vw; line-height: 7.0833vw; } 
+.design_table_wrap { margin: 16.6667vw 0 0; padding: 15.2778vw 5.5556vw 8.3333vw; width: 100%; } 
+.design_table_wrap .table_title { font-size: 5.0000vw; line-height: 7.0833vw; } 
+.design_table_wrap .design_table_align { margin: 8.3333vw auto 0; max-width: 100%; } 
+.design_table_wrap .design_table_align colgroup col:nth-child(1) { width: 22% !important;; } 
+.design_table_wrap .design_table_align thead tr th { font-size:3.7500vw; line-height: 13.3333vw; } 
+.design_table_wrap .design_table_align tbody tr td { font-size:3.7500vw; line-height: 5.8333vw; padding: 4.1667vw 0; } 
+
+/*tip*/
+.tip_list_box { margin: 24.0278vw 0 0; } 
+.tip_list_box .tit_title { padding: 27px 0 0; max-width:88.8889vw; width: 100%; } 
+.tip_list_box .tit_title:before { top: -10px; left: 50%; transform: translateX(-50%); } 
+.tip_list_box .tit_title.tip2 { margin-top: 20.8333vw; } 
+.tip_list_box .tit_title > span { display: inline-block; width: 100%; font-size: 5.0000vw; line-height: 10.0000vw; padding: 0 } 
+.tip_list_box .tit_title.tip2 > span { padding: 4.1667vw 0; line-height: 7.0833vw; } 
+.tip_list_box .f_gray { font-size: 2.9167vw; line-height: 5.0000vw; color: #999999; } 
+
+.tip_list_box .tip_img_list { margin: 8.3333vw auto 0;  padding: 0 8.4722vw; } 
+
+.tip_list_box .tip_img_list .slick-arrow { position: absolute; top:22.2222vw;; width: 72px; height: 72px; background-size: 60% 60%; background-repeat: no-repeat; background-position: left center; z-index: 6; } 
+.tip_list_box .tip_img_list .slick-arrow.custom-prev { left:8.3333vw; background-image: url(../../img/lg-dehumidifiers-guide/icon_left.png); } 
+.tip_list_box .tip_img_list .slick-arrow.custom-next { right:8.3333vw; background-image: url(../../img/lg-dehumidifiers-guide/icon_right.png); background-position: right center; } 
+
+
+.tip_list_box .tip_img_list .dots_custom { display: inline-block; vertical-align: middle; margin: auto 0; padding: 0; margin-top: 11.1111vw; } 
+
+.tip_list_box .tip_img_list .dots_custom li { list-style: none; cursor: pointer; display: inline-block; margin: 0 1.1111vw; padding: 0; } 
+.tip_list_box .tip_img_list .dots_custom li button { border: none; background: #cccccc; color: transparent; cursor: pointer; display: block; height: 1.6667vw; width: 1.6667vw; border-radius: 100%; padding: 0; } 
+.tip_list_box .tip_img_list .dots_custom li.slick-active button { width: 5.0000vw; background-color: #333333; border-radius: 0.8333vw; } 
+
+.tip_list_box .tip_img_list .slick-list {overflow: visible; width: 100%; } 
+.tip_list_box .tip_img_list .slick-list .slick-track { width: 100%; } 
+.tip_list_box .tip_img_list .slick-list .slick-track > li { width: 100%; display: inline-block; margin: 0 2.2222vw; } 
+.tip_list_box .tip_img_list .slick-list .slick-track > li .tip_img img.pc-show { display: none; } 
+.tip_list_box .tip_img_list .slick-list .slick-track > li .tip_img img.m-show { display: inline-block; width: 100%; object-fit: cover; } 
+.tip_list_box .tip_img_list .slick-list .slick-track > li .tip_tit { margin: 2.9167vw 0 0; font-size: 5.0000vw; font-weight: 700; line-height: 7.0833vw; } 
+.tip_list_box .tip_img_list .slick-list .slick-track > li .tip_txt { margin: 1.8056vw 0 0; font-size:3.7500vw; line-height: 5.8333vw; } 
+.tip_list_box .tip_img_list .slick-list .slick-track > li .tip_btn { margin: 2.7778vw 0 0; } 
+.tip_list_box .tip_img_list .slick-list .slick-track > li .tip_btn > a { position: relative; padding: 0 7.6389vw 0 4.4444vw; font-size: 3.7500vw; line-height: 10.0000vw; display: inline-block; color: #fff; background-color: #000; border-radius: 30px; } 
+.tip_list_box .tip_img_list .slick-list .slick-track > li .tip_btn > a::before { content: ""; position: absolute; top: 50%; right: 21px; transform: translateY(-50%); display: inline-block; width: 1.2500vw; height: 2.2222vw; background:url(../../img/lg-dehumidifiers-guide/arrow_white.png) no-repeat; background-size: 100% 100%; background-position: center; margin-left: 9px; } 
+
+
+.tip_list_box .tip_img_list.col-2 { position: relative; width: 100%; display: inline-block; justify-content: initial; gap :initial; padding: 0 8.4722vw; } 
+.tip_list_box .tip_img_list.col-2 .slick-list .slick-track > li { width: 100%; } 
+.tip_list_box .tip_img_list.col-3 { position: relative; max-width: 100%; display: inline-block; justify-content: initial; gap :initial; padding: 0 8.4722vw;} 
+/* .tip_list_box .tip_img_list.col-3 .slick-list .slick-track > li { display: flex; gap: 5.4167vw; width: 100%; height: 55.5556vw; } */
+.tip_list_box .tip_img_list.col-3 .slick-list .slick-track > li .tip_img { flex-shrink: 0; width: 100% } 
+.tip_list_box .tip_img_list.col-3 .slick-list .slick-track > li .tip_txt_box { min-width: 41.6667vw; display: flex; flex-direction: column; justify-content: center; } 
+
+
+
+/*전체링크*/
+.link_btn { margin: 20.8333vw 0 0; } 
+.link_btn a { display: inline-block; font-size:3.7500vw; line-height: 13.3333vw; padding: 0 7.6389vw; } 
+
+}
